@@ -5,7 +5,8 @@
 
 class Algo{
     public:
-        
+        Algo(numOne, numeTwo, numThree, numFour, numFinal);
+        std::string getAnswer();
     
     private:
         

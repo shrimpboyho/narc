@@ -2,3 +2,4 @@
 {"contributors":[],"silentsave":false,"ts":1374773568830,"patch":[[{"diffs":[[1,"#ifndef ALGO_H\n#define ALGO_H\n\n#endif"]],"start1":0,"start2":0,"length1":0,"length2":37}]],"length":37,"saved":false}
 {"ts":1374773573628,"patch":[[{"diffs":[[0,"ALGO_H\n\n"],[1,"\n\n"],[0,"#endif"]],"start1":23,"start2":23,"length1":14,"length2":16}]],"length":39,"saved":false}
 {"ts":1374773632304,"patch":[[{"diffs":[[0,"ALGO_H\n\n"],[1,"#include <string>\n\nclass Algo{\n    public:\n        \n    \n    private:\n        \n};"],[0,"\n\n#endif"]],"start1":23,"start2":23,"length1":16,"length2":97}]],"length":120,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1374773995920,"patch":[[{"diffs":[[0,"ic:\n        "],[1,"Algo(numOne, numeTwo, numThree, numFour, numFinal);\n        std::string getAnswer();"],[0,"\n    \n    pr"]],"start1":70,"start2":70,"length1":24,"length2":108}]],"length":204,"saved":false}
