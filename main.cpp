@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "parser.h"
+#include "algo.h"
 #include <stdlib.h>
 
 int main() {
@@ -23,15 +24,6 @@ int main() {
     std::cin >> numFour;
     std::cin >> finalNum;
     
-    ExpressionParser<int> parser;
-    std::string expr("(0 + ~(0xFF & 1000)*3) /-2");
-
-  try {
-    std::cout << expr << " = " << parser.eval(expr) << std::endl;
-  }
-  catch (parser_error& e) {
-    std::cerr << e.what() << std::endl;
-  }
     
     return 0; 
 }
