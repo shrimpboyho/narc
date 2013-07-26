@@ -8,21 +8,21 @@ int main() {
 
     /* Set up the local variables */
     
-    int numOne;
-    int numTwo;
-    int numThree;
-    int numFour;
-    int finalNum;
+    int raw_input[5];
     
     std::cout << "Welcome to narc. Enter the four digits provided and the digit needed:\n";
     
     /* Get input */
     
-    std::cin >> numOne;
-    std::cin >> numTwo;
-    std::cin >> numThree;
-    std::cin >> numFour;
-    std::cin >> finalNum;
+    std::cin >> raw_input[0];
+    std::cin >> raw_input[1];
+    std::cin >> raw_input[2];
+    std::cin >> raw_input[3];
+    std::cin >> raw_input[4];
+    
+    /* Create the object */
+    
+    Algo newone(raw_input);
     
     
     return 0; 

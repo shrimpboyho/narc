@@ -2,13 +2,14 @@
 #define ALGO_H
 
 #include <string>
+#include <iostream>
 
 class Algo{
     public:
-        Algo(numOne, numeTwo, numThree, numFour, numFinal);
+        
+        Algo(int[]);
         std::string getAnswer();
     
-    private:
         
 };
 
