@@ -3,6 +3,9 @@
 
 #include <string>
 #include <iostream>
+#include <vector>
+
+using namespace std;
 
 struct point{
     int num1;
@@ -12,11 +15,12 @@ struct point{
 };
 
 class Algo{
+    private:
+        vector <point> numPermutations; 
     public:  
         Algo(int input_given[],int finalNum);
         std::string getAnswer();
-    private:
-        vector <point> numPermutations;  
+     
 };
 
 #endif
