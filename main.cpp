@@ -25,6 +25,7 @@ int main() {
     
     Algo newone(raw_input,finalNum);
     
+    vector <string> answers = newone.getAnswer();
     
     return 0; 
 }

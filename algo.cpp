@@ -7,11 +7,13 @@
 using namespace std;
 
 Algo::Algo(int input_given[],int finalNum){
-    
-    
-    
+      
     std::cout << "Recieved array: " << input_given[0] << input_given[1] << input_given[2] << input_given[3] << std::endl;
-    std::cout << "Calculating to: " << finalNum << std::endl;
+    
+    // Set up final size
+    
+    this -> goal = finalNum;
+    std::cout << "Calculating to: " << this -> goal << std::endl;
     
     // Set up permutations
     
@@ -34,13 +36,16 @@ Algo::Algo(int input_given[],int finalNum){
     
 }
 
-std::string Algo::getAnswer(){
+std::vector<string> Algo::getAnswer(){
+    
     int i;
+    vector <string> answerSlots;
     
     // Print out all the permuations
-    cout << "Testing: ";
+    cout << "Testing: \n";
+    for(i = 0; i < this -> numPermutations.size(); i++){
+        cout << numPermutations[i].num1 << ' ' << numPermutations[i].num2 << ' ' << numPermutations[i].num3 << ' ' << numPermutations[i].num4 << '\n';
+    }
     
-
-    
-    return "sample string";
+    return answerSlots;
 }
