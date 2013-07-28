@@ -16,7 +16,8 @@ struct point{
 
 class Algo{
     private:
-        vector <point> numPermutations; 
+        std::vector <point> numPermutations; 
+        std::vector <string> opPermutations;
         int goal;
     public:  
         Algo(int input_given[],int finalNum);

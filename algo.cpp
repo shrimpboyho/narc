@@ -4,8 +4,6 @@
 #include <vector>
 #include <algorithm>
 
-using namespace std;
-
 Algo::Algo(int input_given[],int finalNum){
       
     std::cout << "Recieved array: " << input_given[0] << input_given[1] << input_given[2] << input_given[3] << std::endl;
@@ -15,7 +13,7 @@ Algo::Algo(int input_given[],int finalNum){
     this -> goal = finalNum;
     std::cout << "Calculating to: " << this -> goal << std::endl;
     
-    // Set up permutations
+    // Set up permutations for numbers
     
     std::sort(input_given, input_given +4);
     
@@ -34,6 +32,17 @@ Algo::Algo(int input_given[],int finalNum){
 
     std::cout << "After loop: " << input_given[0] << ' ' << input_given[1] << ' ' << input_given[2] << ' ' << input_given[3]<< '\n';
     
+    // Set up permutations for operators
+    
+    string operatorBank[4] = {"+","-","*","/"};
+    
+     do {
+        
+        string currentPerm = operatorBank[0] + operatorBank[1] + operatorBank[2] + operatorBank[3];
+        
+        this -> opPermutations.push_back(currentPerm);
+        
+    } while ( std::next_permutation(operatorBank, operatorBank + 4) );
 }
 
 std::vector<string> Algo::getAnswer(){
@@ -42,10 +51,18 @@ std::vector<string> Algo::getAnswer(){
     vector <string> answerSlots;
     
     // Print out all the permuations
-    cout << "Testing: \n";
+    
+    std::cout << "Testing: \n";
+    
     for(i = 0; i < this -> numPermutations.size(); i++){
-        cout << numPermutations[i].num1 << ' ' << numPermutations[i].num2 << ' ' << numPermutations[i].num3 << ' ' << numPermutations[i].num4 << '\n';
+        std::cout << numPermutations[i].num1 << ' ' << numPermutations[i].num2 << ' ' << numPermutations[i].num3 << ' ' << numPermutations[i].num4 << '\n';
     }
+    
+    for(i = 0; i < this -> opPermutations.size(); i++){
+        std::cout << opPermutations[i] << '\n';
+    }
+    
+    /* TODO: Begin the proccess of testing stuff here */
     
     return answerSlots;
 }
