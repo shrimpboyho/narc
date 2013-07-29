@@ -22,6 +22,7 @@ class Algo{
     public:  
         Algo(int input_given[],int finalNum);
         std::vector<string> getAnswer();
+        string to_string(int number);
      
 };
 
