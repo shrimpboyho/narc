@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <algorithm>
+#include "parser.h"
 
 Algo::Algo(int input_given[],int finalNum){
       
@@ -68,8 +69,19 @@ std::vector<string> Algo::getAnswer(){
     for(i = 0; i < numPermutations.size(); i++){
         
         for(k = 0; k < opPermutations.size(); k++){
+            
             string testy = to_string(numPermutations[i].num1) + opPermutations[k].at(0) + to_string(numPermutations[i].num2) + opPermutations[k].at(1) + to_string(numPermutations[i].num3) + opPermutations[k].at(2) + to_string(numPermutations[i].num4);
-            cout << testy << std::endl;
+            cout << "Testing: " << testy;
+            
+            // Test the equation
+            
+            ExpressionParser <int> parser;
+            if(parser.eval(testy) == this-> goal){
+                cout << " SUCCESS\n";
+            }else{
+                cout << " FAIL\n";
+            }
+            
         }
         
     }
