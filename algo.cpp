@@ -2,8 +2,33 @@
 #include <iostream>
 
 #include <vector>
+#include <math.h>
 #include <algorithm>
 #include "parser.h"
+
+void Algo::injectPermutation(string permutation[], int length){
+    int i;
+    for (i=0;i<length;i++){
+        this -> opPermutations.push_back(permutation[0] + permutation[1] + permutation[2]);
+    }
+    cout << endl;
+}
+
+void Algo::getPermutations(string operatorBank[], int operatorCount, 
+    string permutation[],int permutationLength, int curIndex){
+    int i;
+    //stop recursion condition
+    if(curIndex == permutationLength){
+        injectPermutation(permutation,permutationLength);
+    }
+    else{
+        for(i = 0; i < operatorCount; i++){
+            permutation[curIndex] = operatorBank[i];
+            getPermutations(operatorBank,operatorCount,permutation,
+                permutationLength,curIndex+1);
+        }
+    }
+}
 
 Algo::Algo(int input_given[],int finalNum){
       
@@ -35,15 +60,12 @@ Algo::Algo(int input_given[],int finalNum){
     
     // Set up permutations for operators
     
-    string operatorBank[4] = {"+","-","*","/"};
-    
-     do {
-        
-        string currentPerm = operatorBank[0] + operatorBank[1] + operatorBank[2] + operatorBank[3];
-        
-        this -> opPermutations.push_back(currentPerm);
-        
-    } while ( std::next_permutation(operatorBank, operatorBank + 4) );
+    int operatorCount = 4;
+    int permutationLength = 3;
+    string operatorBank[] = {"+","-","*","/"};
+    string permutation[] = {"","","",""};
+    int curIndex = 0;
+    getPermutations(operatorBank,operatorCount,permutation,permutationLength,curIndex);
 }
 
 std::vector<string> Algo::getAnswer(){

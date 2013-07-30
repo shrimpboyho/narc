@@ -23,6 +23,8 @@ class Algo{
         Algo(int input_given[],int finalNum);
         std::vector<string> getAnswer();
         string to_string(int number);
+        void getPermutations(string operatorBank[], int operatorCount,string permutation[],int permutationLength, int curIndex);
+        void injectPermutation(string permutation[], int length);
      
 };
 
