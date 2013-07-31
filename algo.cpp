@@ -9,10 +9,7 @@
 /* Injects permutations into the vector */
 
 void Algo::injectPermutation(string permutation[], int length){
-    int i;
-    for (i=0;i<length;i++){
         this -> opPermutations.push_back(permutation[0] + permutation[1] + permutation[2]);
-    }
 }
 
 /* Creates permutations */
