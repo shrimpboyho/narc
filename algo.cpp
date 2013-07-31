@@ -11,7 +11,6 @@ void Algo::injectPermutation(string permutation[], int length){
     for (i=0;i<length;i++){
         this -> opPermutations.push_back(permutation[0] + permutation[1] + permutation[2]);
     }
-    cout << endl;
 }
 
 void Algo::getPermutations(string operatorBank[], int operatorCount, 
