@@ -6,12 +6,16 @@
 #include <algorithm>
 #include "parser.h"
 
+/* Injects permutations into the vector */
+
 void Algo::injectPermutation(string permutation[], int length){
     int i;
     for (i=0;i<length;i++){
         this -> opPermutations.push_back(permutation[0] + permutation[1] + permutation[2]);
     }
 }
+
+/* Creates permutations */
 
 void Algo::getPermutations(string operatorBank[], int operatorCount, 
     string permutation[],int permutationLength, int curIndex){
@@ -28,6 +32,8 @@ void Algo::getPermutations(string operatorBank[], int operatorCount,
         }
     }
 }
+
+/* The constructor for the class */
 
 Algo::Algo(int input_given[],int finalNum){
       
@@ -67,6 +73,8 @@ Algo::Algo(int input_given[],int finalNum){
     getPermutations(operatorBank,operatorCount,permutation,permutationLength,curIndex);
 }
 
+/* Returns answers */
+
 std::vector<string> Algo::getAnswer(){
     
     int i;
@@ -85,8 +93,6 @@ std::vector<string> Algo::getAnswer(){
         std::cout << opPermutations[i] << '\n';
     }
     
-    /* TODO: Begin the proccess of testing stuff here */
-    
     for(i = 0; i < numPermutations.size(); i++){
         
         for(k = 0; k < opPermutations.size(); k++){
@@ -99,6 +105,7 @@ std::vector<string> Algo::getAnswer(){
             ExpressionParser <int> parser;
             if(parser.eval(testy) == this-> goal){
                 cout << " SUCCESS\n";
+                answerSlots.push_back(testy);
             }else{
                 cout << " FAIL\n";
             }
@@ -109,6 +116,8 @@ std::vector<string> Algo::getAnswer(){
     
     return answerSlots;
 }
+
+/* Converts string integers to actual integers */
 
 string Algo::to_string(int number){
     string number_string = "";
