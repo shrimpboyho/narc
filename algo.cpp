@@ -98,10 +98,18 @@ std::vector<string> Algo::getAnswer(){
             string testy = to_string(numPermutations[i].num1) + opPermutations[k].at(0) + to_string(numPermutations[i].num2) + opPermutations[k].at(1) + to_string(numPermutations[i].num3) + opPermutations[k].at(2) + to_string(numPermutations[i].num4);
             cout << "Testing: " << testy;
             
+            string firstJoint = to_string(numPermutations[i].num1) + opPermutations[k].at(0) + to_string(numPermutations[i].num2);
+            string secondJoint = opPermutations[k].at(1) + to_string(numPermutations[i].num3);
+            string thirdJoint = opPermutations[k].at(2) + to_string(numPermutations[i].num4);
+            
             // Test the equation
             
             ExpressionParser <int> parser;
-            if(parser.eval(testy) == this-> goal){
+            int firstJointEval = parser.eval(firstJoint);
+            int secondJointEval = parser.eval(to_string(firstJointEval) + secondJoint);
+            int thirdJointEval = parser.eval(to_string(secondJointEval) + thirdJoint);
+            
+            if(thirdJointEval == this -> goal){
                 cout << " SUCCESS\n";
                 answerSlots.push_back(testy);
             }else{
