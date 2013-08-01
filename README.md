@@ -13,7 +13,7 @@ $ make
 How to run:
 
 ```
-$ ./builtThing
+$ ./thing
 ```
 
 
