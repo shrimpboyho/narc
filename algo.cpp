@@ -1,5 +1,6 @@
 #include "algo.h"
 #include <iostream>
+#include <string>
 
 #include <vector>
 #include <math.h>
@@ -114,9 +115,11 @@ std::vector<string> Algo::getAnswer(){
     return answerSlots;
 }
 
-/* Converts string integers to actual integers */
+/* Converts integers to string integers */
 
 string Algo::to_string(int number){
+    
+    /*s
     string number_string = "";
     char ones_char;
     int ones = 0;
@@ -143,4 +146,9 @@ string Algo::to_string(int number){
         number = number/10;
     }
     return number_string;
+    */
+    
+    stringstream ss;
+    ss << number;
+    return ss.str();
 }

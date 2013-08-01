@@ -1,6 +1,6 @@
 Welcome to narc. Enter the four digits provided and the digit needed:
 Recieved array: 1234
-Calculating to: 9
+Calculating to: 8
 Pushing in: 1 2 3 4
 Pushing in: 1 2 4 3
 Pushing in: 1 3 2 4
@@ -147,7 +147,7 @@ Testing: 1-2/3+4 FAIL
 Testing: 1-2/3-4 FAIL
 Testing: 1-2/3*4 FAIL
 Testing: 1-2/3/4 FAIL
-Testing: 1*2+3+4 SUCCESS
+Testing: 1*2+3+4 FAIL
 Testing: 1*2+3-4 FAIL
 Testing: 1*2+3*4 FAIL
 Testing: 1*2+3/4 FAIL
@@ -211,7 +211,7 @@ Testing: 1-2/4+3 FAIL
 Testing: 1-2/4-3 FAIL
 Testing: 1-2/4*3 FAIL
 Testing: 1-2/4/3 FAIL
-Testing: 1*2+4+3 SUCCESS
+Testing: 1*2+4+3 FAIL
 Testing: 1*2+4-3 FAIL
 Testing: 1*2+4*3 FAIL
 Testing: 1*2+4/3 FAIL
@@ -275,7 +275,7 @@ Testing: 1-3/2+4 FAIL
 Testing: 1-3/2-4 FAIL
 Testing: 1-3/2*4 FAIL
 Testing: 1-3/2/4 FAIL
-Testing: 1*3+2+4 SUCCESS
+Testing: 1*3+2+4 FAIL
 Testing: 1*3+2-4 FAIL
 Testing: 1*3+2*4 FAIL
 Testing: 1*3+2/4 FAIL
@@ -293,7 +293,7 @@ Testing: 1*3/2*4 FAIL
 Testing: 1*3/2/4 FAIL
 Testing: 1/3+2+4 FAIL
 Testing: 1/3+2-4 FAIL
-Testing: 1/3+2*4 FAIL
+Testing: 1/3+2*4 SUCCESS
 Testing: 1/3+2/4 FAIL
 Testing: 1/3-2+4 FAIL
 Testing: 1/3-2-4 FAIL
@@ -339,7 +339,7 @@ Testing: 1-3/4+2 FAIL
 Testing: 1-3/4-2 FAIL
 Testing: 1-3/4*2 FAIL
 Testing: 1-3/4/2 FAIL
-Testing: 1*3+4+2 SUCCESS
+Testing: 1*3+4+2 FAIL
 Testing: 1*3+4-2 FAIL
 Testing: 1*3+4*2 FAIL
 Testing: 1*3+4/2 FAIL
@@ -357,7 +357,7 @@ Testing: 1*3/4*2 FAIL
 Testing: 1*3/4/2 FAIL
 Testing: 1/3+4+2 FAIL
 Testing: 1/3+4-2 FAIL
-Testing: 1/3+4*2 FAIL
+Testing: 1/3+4*2 SUCCESS
 Testing: 1/3+4/2 FAIL
 Testing: 1/3-4+2 FAIL
 Testing: 1/3-4-2 FAIL
@@ -403,7 +403,7 @@ Testing: 1-4/2+3 FAIL
 Testing: 1-4/2-3 FAIL
 Testing: 1-4/2*3 FAIL
 Testing: 1-4/2/3 FAIL
-Testing: 1*4+2+3 SUCCESS
+Testing: 1*4+2+3 FAIL
 Testing: 1*4+2-3 FAIL
 Testing: 1*4+2*3 FAIL
 Testing: 1*4+2/3 FAIL
@@ -467,7 +467,7 @@ Testing: 1-4/3+2 FAIL
 Testing: 1-4/3-2 FAIL
 Testing: 1-4/3*2 FAIL
 Testing: 1-4/3/2 FAIL
-Testing: 1*4+3+2 SUCCESS
+Testing: 1*4+3+2 FAIL
 Testing: 1*4+3-2 FAIL
 Testing: 1*4+3*2 FAIL
 Testing: 1*4+3/2 FAIL
@@ -507,7 +507,7 @@ Testing: 2+1-3+4 FAIL
 Testing: 2+1-3-4 FAIL
 Testing: 2+1-3*4 FAIL
 Testing: 2+1-3/4 FAIL
-Testing: 2+1*3+4 SUCCESS
+Testing: 2+1*3+4 FAIL
 Testing: 2+1*3-4 FAIL
 Testing: 2+1*3*4 FAIL
 Testing: 2+1*3/4 FAIL
@@ -515,7 +515,7 @@ Testing: 2+1/3+4 FAIL
 Testing: 2+1/3-4 FAIL
 Testing: 2+1/3*4 FAIL
 Testing: 2+1/3/4 FAIL
-Testing: 2-1+3+4 FAIL
+Testing: 2-1+3+4 SUCCESS
 Testing: 2-1+3-4 FAIL
 Testing: 2-1+3*4 FAIL
 Testing: 2-1+3/4 FAIL
@@ -531,7 +531,7 @@ Testing: 2-1/3+4 FAIL
 Testing: 2-1/3-4 FAIL
 Testing: 2-1/3*4 FAIL
 Testing: 2-1/3/4 FAIL
-Testing: 2*1+3+4 SUCCESS
+Testing: 2*1+3+4 FAIL
 Testing: 2*1+3-4 FAIL
 Testing: 2*1+3*4 FAIL
 Testing: 2*1+3/4 FAIL
@@ -547,7 +547,7 @@ Testing: 2*1/3+4 FAIL
 Testing: 2*1/3-4 FAIL
 Testing: 2*1/3*4 FAIL
 Testing: 2*1/3/4 FAIL
-Testing: 2/1+3+4 SUCCESS
+Testing: 2/1+3+4 FAIL
 Testing: 2/1+3-4 FAIL
 Testing: 2/1+3*4 FAIL
 Testing: 2/1+3/4 FAIL
@@ -571,7 +571,7 @@ Testing: 2+1-4+3 FAIL
 Testing: 2+1-4-3 FAIL
 Testing: 2+1-4*3 FAIL
 Testing: 2+1-4/3 FAIL
-Testing: 2+1*4+3 SUCCESS
+Testing: 2+1*4+3 FAIL
 Testing: 2+1*4-3 FAIL
 Testing: 2+1*4*3 FAIL
 Testing: 2+1*4/3 FAIL
@@ -579,7 +579,7 @@ Testing: 2+1/4+3 FAIL
 Testing: 2+1/4-3 FAIL
 Testing: 2+1/4*3 FAIL
 Testing: 2+1/4/3 FAIL
-Testing: 2-1+4+3 FAIL
+Testing: 2-1+4+3 SUCCESS
 Testing: 2-1+4-3 FAIL
 Testing: 2-1+4*3 FAIL
 Testing: 2-1+4/3 FAIL
@@ -595,7 +595,7 @@ Testing: 2-1/4+3 FAIL
 Testing: 2-1/4-3 FAIL
 Testing: 2-1/4*3 FAIL
 Testing: 2-1/4/3 FAIL
-Testing: 2*1+4+3 SUCCESS
+Testing: 2*1+4+3 FAIL
 Testing: 2*1+4-3 FAIL
 Testing: 2*1+4*3 FAIL
 Testing: 2*1+4/3 FAIL
@@ -611,7 +611,7 @@ Testing: 2*1/4+3 FAIL
 Testing: 2*1/4-3 FAIL
 Testing: 2*1/4*3 FAIL
 Testing: 2*1/4/3 FAIL
-Testing: 2/1+4+3 SUCCESS
+Testing: 2/1+4+3 FAIL
 Testing: 2/1+4-3 FAIL
 Testing: 2/1+4*3 FAIL
 Testing: 2/1+4/3 FAIL
@@ -629,17 +629,17 @@ Testing: 2/1/4*3 FAIL
 Testing: 2/1/4/3 FAIL
 Testing: 2+3+1+4 FAIL
 Testing: 2+3+1-4 FAIL
-Testing: 2+3+1*4 SUCCESS
+Testing: 2+3+1*4 FAIL
 Testing: 2+3+1/4 FAIL
-Testing: 2+3-1+4 FAIL
+Testing: 2+3-1+4 SUCCESS
 Testing: 2+3-1-4 FAIL
 Testing: 2+3-1*4 FAIL
 Testing: 2+3-1/4 FAIL
-Testing: 2+3*1+4 SUCCESS
+Testing: 2+3*1+4 FAIL
 Testing: 2+3*1-4 FAIL
 Testing: 2+3*1*4 FAIL
 Testing: 2+3*1/4 FAIL
-Testing: 2+3/1+4 SUCCESS
+Testing: 2+3/1+4 FAIL
 Testing: 2+3/1-4 FAIL
 Testing: 2+3/1*4 FAIL
 Testing: 2+3/1/4 FAIL
@@ -663,7 +663,7 @@ Testing: 2*3+1+4 FAIL
 Testing: 2*3+1-4 FAIL
 Testing: 2*3+1*4 FAIL
 Testing: 2*3+1/4 FAIL
-Testing: 2*3-1+4 SUCCESS
+Testing: 2*3-1+4 FAIL
 Testing: 2*3-1-4 FAIL
 Testing: 2*3-1*4 FAIL
 Testing: 2*3-1/4 FAIL
@@ -692,9 +692,9 @@ Testing: 2/3/1-4 FAIL
 Testing: 2/3/1*4 FAIL
 Testing: 2/3/1/4 FAIL
 Testing: 2+3+4+1 FAIL
-Testing: 2+3+4-1 FAIL
-Testing: 2+3+4*1 SUCCESS
-Testing: 2+3+4/1 SUCCESS
+Testing: 2+3+4-1 SUCCESS
+Testing: 2+3+4*1 FAIL
+Testing: 2+3+4/1 FAIL
 Testing: 2+3-4+1 FAIL
 Testing: 2+3-4-1 FAIL
 Testing: 2+3-4*1 FAIL
@@ -724,7 +724,7 @@ Testing: 2-3/4-1 FAIL
 Testing: 2-3/4*1 FAIL
 Testing: 2-3/4/1 FAIL
 Testing: 2*3+4+1 FAIL
-Testing: 2*3+4-1 SUCCESS
+Testing: 2*3+4-1 FAIL
 Testing: 2*3+4*1 FAIL
 Testing: 2*3+4/1 FAIL
 Testing: 2*3-4+1 FAIL
@@ -757,17 +757,17 @@ Testing: 2/3/4*1 FAIL
 Testing: 2/3/4/1 FAIL
 Testing: 2+4+1+3 FAIL
 Testing: 2+4+1-3 FAIL
-Testing: 2+4+1*3 SUCCESS
+Testing: 2+4+1*3 FAIL
 Testing: 2+4+1/3 FAIL
-Testing: 2+4-1+3 FAIL
+Testing: 2+4-1+3 SUCCESS
 Testing: 2+4-1-3 FAIL
 Testing: 2+4-1*3 FAIL
 Testing: 2+4-1/3 FAIL
-Testing: 2+4*1+3 SUCCESS
+Testing: 2+4*1+3 FAIL
 Testing: 2+4*1-3 FAIL
 Testing: 2+4*1*3 FAIL
 Testing: 2+4*1/3 FAIL
-Testing: 2+4/1+3 SUCCESS
+Testing: 2+4/1+3 FAIL
 Testing: 2+4/1-3 FAIL
 Testing: 2+4/1*3 FAIL
 Testing: 2+4/1/3 FAIL
@@ -790,11 +790,11 @@ Testing: 2-4/1/3 FAIL
 Testing: 2*4+1+3 FAIL
 Testing: 2*4+1-3 FAIL
 Testing: 2*4+1*3 FAIL
-Testing: 2*4+1/3 FAIL
+Testing: 2*4+1/3 SUCCESS
 Testing: 2*4-1+3 FAIL
 Testing: 2*4-1-3 FAIL
 Testing: 2*4-1*3 FAIL
-Testing: 2*4-1/3 FAIL
+Testing: 2*4-1/3 SUCCESS
 Testing: 2*4*1+3 FAIL
 Testing: 2*4*1-3 FAIL
 Testing: 2*4*1*3 FAIL
@@ -820,9 +820,9 @@ Testing: 2/4/1-3 FAIL
 Testing: 2/4/1*3 FAIL
 Testing: 2/4/1/3 FAIL
 Testing: 2+4+3+1 FAIL
-Testing: 2+4+3-1 FAIL
-Testing: 2+4+3*1 SUCCESS
-Testing: 2+4+3/1 SUCCESS
+Testing: 2+4+3-1 SUCCESS
+Testing: 2+4+3*1 FAIL
+Testing: 2+4+3/1 FAIL
 Testing: 2+4-3+1 FAIL
 Testing: 2+4-3-1 FAIL
 Testing: 2+4-3*1 FAIL
@@ -891,7 +891,7 @@ Testing: 3+1-2+4 FAIL
 Testing: 3+1-2-4 FAIL
 Testing: 3+1-2*4 FAIL
 Testing: 3+1-2/4 FAIL
-Testing: 3+1*2+4 SUCCESS
+Testing: 3+1*2+4 FAIL
 Testing: 3+1*2-4 FAIL
 Testing: 3+1*2*4 FAIL
 Testing: 3+1*2/4 FAIL
@@ -899,7 +899,7 @@ Testing: 3+1/2+4 FAIL
 Testing: 3+1/2-4 FAIL
 Testing: 3+1/2*4 FAIL
 Testing: 3+1/2/4 FAIL
-Testing: 3-1+2+4 FAIL
+Testing: 3-1+2+4 SUCCESS
 Testing: 3-1+2-4 FAIL
 Testing: 3-1+2*4 FAIL
 Testing: 3-1+2/4 FAIL
@@ -915,7 +915,7 @@ Testing: 3-1/2+4 FAIL
 Testing: 3-1/2-4 FAIL
 Testing: 3-1/2*4 FAIL
 Testing: 3-1/2/4 FAIL
-Testing: 3*1+2+4 SUCCESS
+Testing: 3*1+2+4 FAIL
 Testing: 3*1+2-4 FAIL
 Testing: 3*1+2*4 FAIL
 Testing: 3*1+2/4 FAIL
@@ -931,7 +931,7 @@ Testing: 3*1/2+4 FAIL
 Testing: 3*1/2-4 FAIL
 Testing: 3*1/2*4 FAIL
 Testing: 3*1/2/4 FAIL
-Testing: 3/1+2+4 SUCCESS
+Testing: 3/1+2+4 FAIL
 Testing: 3/1+2-4 FAIL
 Testing: 3/1+2*4 FAIL
 Testing: 3/1+2/4 FAIL
@@ -955,7 +955,7 @@ Testing: 3+1-4+2 FAIL
 Testing: 3+1-4-2 FAIL
 Testing: 3+1-4*2 FAIL
 Testing: 3+1-4/2 FAIL
-Testing: 3+1*4+2 SUCCESS
+Testing: 3+1*4+2 FAIL
 Testing: 3+1*4-2 FAIL
 Testing: 3+1*4*2 FAIL
 Testing: 3+1*4/2 FAIL
@@ -963,7 +963,7 @@ Testing: 3+1/4+2 FAIL
 Testing: 3+1/4-2 FAIL
 Testing: 3+1/4*2 FAIL
 Testing: 3+1/4/2 FAIL
-Testing: 3-1+4+2 FAIL
+Testing: 3-1+4+2 SUCCESS
 Testing: 3-1+4-2 FAIL
 Testing: 3-1+4*2 FAIL
 Testing: 3-1+4/2 FAIL
@@ -979,7 +979,7 @@ Testing: 3-1/4+2 FAIL
 Testing: 3-1/4-2 FAIL
 Testing: 3-1/4*2 FAIL
 Testing: 3-1/4/2 FAIL
-Testing: 3*1+4+2 SUCCESS
+Testing: 3*1+4+2 FAIL
 Testing: 3*1+4-2 FAIL
 Testing: 3*1+4*2 FAIL
 Testing: 3*1+4/2 FAIL
@@ -995,7 +995,7 @@ Testing: 3*1/4+2 FAIL
 Testing: 3*1/4-2 FAIL
 Testing: 3*1/4*2 FAIL
 Testing: 3*1/4/2 FAIL
-Testing: 3/1+4+2 SUCCESS
+Testing: 3/1+4+2 FAIL
 Testing: 3/1+4-2 FAIL
 Testing: 3/1+4*2 FAIL
 Testing: 3/1+4/2 FAIL
@@ -1013,17 +1013,17 @@ Testing: 3/1/4*2 FAIL
 Testing: 3/1/4/2 FAIL
 Testing: 3+2+1+4 FAIL
 Testing: 3+2+1-4 FAIL
-Testing: 3+2+1*4 SUCCESS
+Testing: 3+2+1*4 FAIL
 Testing: 3+2+1/4 FAIL
-Testing: 3+2-1+4 FAIL
+Testing: 3+2-1+4 SUCCESS
 Testing: 3+2-1-4 FAIL
 Testing: 3+2-1*4 FAIL
 Testing: 3+2-1/4 FAIL
-Testing: 3+2*1+4 SUCCESS
+Testing: 3+2*1+4 FAIL
 Testing: 3+2*1-4 FAIL
 Testing: 3+2*1*4 FAIL
 Testing: 3+2*1/4 FAIL
-Testing: 3+2/1+4 SUCCESS
+Testing: 3+2/1+4 FAIL
 Testing: 3+2/1-4 FAIL
 Testing: 3+2/1*4 FAIL
 Testing: 3+2/1/4 FAIL
@@ -1047,7 +1047,7 @@ Testing: 3*2+1+4 FAIL
 Testing: 3*2+1-4 FAIL
 Testing: 3*2+1*4 FAIL
 Testing: 3*2+1/4 FAIL
-Testing: 3*2-1+4 SUCCESS
+Testing: 3*2-1+4 FAIL
 Testing: 3*2-1-4 FAIL
 Testing: 3*2-1*4 FAIL
 Testing: 3*2-1/4 FAIL
@@ -1076,9 +1076,9 @@ Testing: 3/2/1-4 FAIL
 Testing: 3/2/1*4 FAIL
 Testing: 3/2/1/4 FAIL
 Testing: 3+2+4+1 FAIL
-Testing: 3+2+4-1 FAIL
-Testing: 3+2+4*1 SUCCESS
-Testing: 3+2+4/1 SUCCESS
+Testing: 3+2+4-1 SUCCESS
+Testing: 3+2+4*1 FAIL
+Testing: 3+2+4/1 FAIL
 Testing: 3+2-4+1 FAIL
 Testing: 3+2-4-1 FAIL
 Testing: 3+2-4*1 FAIL
@@ -1108,7 +1108,7 @@ Testing: 3-2/4-1 FAIL
 Testing: 3-2/4*1 FAIL
 Testing: 3-2/4/1 FAIL
 Testing: 3*2+4+1 FAIL
-Testing: 3*2+4-1 SUCCESS
+Testing: 3*2+4-1 FAIL
 Testing: 3*2+4*1 FAIL
 Testing: 3*2+4/1 FAIL
 Testing: 3*2-4+1 FAIL
@@ -1141,17 +1141,17 @@ Testing: 3/2/4*1 FAIL
 Testing: 3/2/4/1 FAIL
 Testing: 3+4+1+2 FAIL
 Testing: 3+4+1-2 FAIL
-Testing: 3+4+1*2 SUCCESS
+Testing: 3+4+1*2 FAIL
 Testing: 3+4+1/2 FAIL
-Testing: 3+4-1+2 FAIL
+Testing: 3+4-1+2 SUCCESS
 Testing: 3+4-1-2 FAIL
 Testing: 3+4-1*2 FAIL
 Testing: 3+4-1/2 FAIL
-Testing: 3+4*1+2 SUCCESS
+Testing: 3+4*1+2 FAIL
 Testing: 3+4*1-2 FAIL
 Testing: 3+4*1*2 FAIL
 Testing: 3+4*1/2 FAIL
-Testing: 3+4/1+2 SUCCESS
+Testing: 3+4/1+2 FAIL
 Testing: 3+4/1-2 FAIL
 Testing: 3+4/1*2 FAIL
 Testing: 3+4/1/2 FAIL
@@ -1176,7 +1176,7 @@ Testing: 3*4+1-2 FAIL
 Testing: 3*4+1*2 FAIL
 Testing: 3*4+1/2 FAIL
 Testing: 3*4-1+2 FAIL
-Testing: 3*4-1-2 SUCCESS
+Testing: 3*4-1-2 FAIL
 Testing: 3*4-1*2 FAIL
 Testing: 3*4-1/2 FAIL
 Testing: 3*4*1+2 FAIL
@@ -1204,9 +1204,9 @@ Testing: 3/4/1-2 FAIL
 Testing: 3/4/1*2 FAIL
 Testing: 3/4/1/2 FAIL
 Testing: 3+4+2+1 FAIL
-Testing: 3+4+2-1 FAIL
-Testing: 3+4+2*1 SUCCESS
-Testing: 3+4+2/1 SUCCESS
+Testing: 3+4+2-1 SUCCESS
+Testing: 3+4+2*1 FAIL
+Testing: 3+4+2/1 FAIL
 Testing: 3+4-2+1 FAIL
 Testing: 3+4-2-1 FAIL
 Testing: 3+4-2*1 FAIL
@@ -1240,7 +1240,7 @@ Testing: 3*4+2-1 FAIL
 Testing: 3*4+2*1 FAIL
 Testing: 3*4+2/1 FAIL
 Testing: 3*4-2+1 FAIL
-Testing: 3*4-2-1 SUCCESS
+Testing: 3*4-2-1 FAIL
 Testing: 3*4-2*1 FAIL
 Testing: 3*4-2/1 FAIL
 Testing: 3*4*2+1 FAIL
@@ -1275,7 +1275,7 @@ Testing: 4+1-2+3 FAIL
 Testing: 4+1-2-3 FAIL
 Testing: 4+1-2*3 FAIL
 Testing: 4+1-2/3 FAIL
-Testing: 4+1*2+3 SUCCESS
+Testing: 4+1*2+3 FAIL
 Testing: 4+1*2-3 FAIL
 Testing: 4+1*2*3 FAIL
 Testing: 4+1*2/3 FAIL
@@ -1283,9 +1283,9 @@ Testing: 4+1/2+3 FAIL
 Testing: 4+1/2-3 FAIL
 Testing: 4+1/2*3 FAIL
 Testing: 4+1/2/3 FAIL
-Testing: 4-1+2+3 FAIL
+Testing: 4-1+2+3 SUCCESS
 Testing: 4-1+2-3 FAIL
-Testing: 4-1+2*3 SUCCESS
+Testing: 4-1+2*3 FAIL
 Testing: 4-1+2/3 FAIL
 Testing: 4-1-2+3 FAIL
 Testing: 4-1-2-3 FAIL
@@ -1299,7 +1299,7 @@ Testing: 4-1/2+3 FAIL
 Testing: 4-1/2-3 FAIL
 Testing: 4-1/2*3 FAIL
 Testing: 4-1/2/3 FAIL
-Testing: 4*1+2+3 SUCCESS
+Testing: 4*1+2+3 FAIL
 Testing: 4*1+2-3 FAIL
 Testing: 4*1+2*3 FAIL
 Testing: 4*1+2/3 FAIL
@@ -1315,7 +1315,7 @@ Testing: 4*1/2+3 FAIL
 Testing: 4*1/2-3 FAIL
 Testing: 4*1/2*3 FAIL
 Testing: 4*1/2/3 FAIL
-Testing: 4/1+2+3 SUCCESS
+Testing: 4/1+2+3 FAIL
 Testing: 4/1+2-3 FAIL
 Testing: 4/1+2*3 FAIL
 Testing: 4/1+2/3 FAIL
@@ -1339,7 +1339,7 @@ Testing: 4+1-3+2 FAIL
 Testing: 4+1-3-2 FAIL
 Testing: 4+1-3*2 FAIL
 Testing: 4+1-3/2 FAIL
-Testing: 4+1*3+2 SUCCESS
+Testing: 4+1*3+2 FAIL
 Testing: 4+1*3-2 FAIL
 Testing: 4+1*3*2 FAIL
 Testing: 4+1*3/2 FAIL
@@ -1347,9 +1347,9 @@ Testing: 4+1/3+2 FAIL
 Testing: 4+1/3-2 FAIL
 Testing: 4+1/3*2 FAIL
 Testing: 4+1/3/2 FAIL
-Testing: 4-1+3+2 FAIL
+Testing: 4-1+3+2 SUCCESS
 Testing: 4-1+3-2 FAIL
-Testing: 4-1+3*2 SUCCESS
+Testing: 4-1+3*2 FAIL
 Testing: 4-1+3/2 FAIL
 Testing: 4-1-3+2 FAIL
 Testing: 4-1-3-2 FAIL
@@ -1363,7 +1363,7 @@ Testing: 4-1/3+2 FAIL
 Testing: 4-1/3-2 FAIL
 Testing: 4-1/3*2 FAIL
 Testing: 4-1/3/2 FAIL
-Testing: 4*1+3+2 SUCCESS
+Testing: 4*1+3+2 FAIL
 Testing: 4*1+3-2 FAIL
 Testing: 4*1+3*2 FAIL
 Testing: 4*1+3/2 FAIL
@@ -1379,7 +1379,7 @@ Testing: 4*1/3+2 FAIL
 Testing: 4*1/3-2 FAIL
 Testing: 4*1/3*2 FAIL
 Testing: 4*1/3/2 FAIL
-Testing: 4/1+3+2 SUCCESS
+Testing: 4/1+3+2 FAIL
 Testing: 4/1+3-2 FAIL
 Testing: 4/1+3*2 FAIL
 Testing: 4/1+3/2 FAIL
@@ -1397,17 +1397,17 @@ Testing: 4/1/3*2 FAIL
 Testing: 4/1/3/2 FAIL
 Testing: 4+2+1+3 FAIL
 Testing: 4+2+1-3 FAIL
-Testing: 4+2+1*3 SUCCESS
+Testing: 4+2+1*3 FAIL
 Testing: 4+2+1/3 FAIL
-Testing: 4+2-1+3 FAIL
+Testing: 4+2-1+3 SUCCESS
 Testing: 4+2-1-3 FAIL
 Testing: 4+2-1*3 FAIL
 Testing: 4+2-1/3 FAIL
-Testing: 4+2*1+3 SUCCESS
+Testing: 4+2*1+3 FAIL
 Testing: 4+2*1-3 FAIL
 Testing: 4+2*1*3 FAIL
 Testing: 4+2*1/3 FAIL
-Testing: 4+2/1+3 SUCCESS
+Testing: 4+2/1+3 FAIL
 Testing: 4+2/1-3 FAIL
 Testing: 4+2/1*3 FAIL
 Testing: 4+2/1/3 FAIL
@@ -1430,11 +1430,11 @@ Testing: 4-2/1/3 FAIL
 Testing: 4*2+1+3 FAIL
 Testing: 4*2+1-3 FAIL
 Testing: 4*2+1*3 FAIL
-Testing: 4*2+1/3 FAIL
+Testing: 4*2+1/3 SUCCESS
 Testing: 4*2-1+3 FAIL
 Testing: 4*2-1-3 FAIL
 Testing: 4*2-1*3 FAIL
-Testing: 4*2-1/3 FAIL
+Testing: 4*2-1/3 SUCCESS
 Testing: 4*2*1+3 FAIL
 Testing: 4*2*1-3 FAIL
 Testing: 4*2*1*3 FAIL
@@ -1460,15 +1460,15 @@ Testing: 4/2/1-3 FAIL
 Testing: 4/2/1*3 FAIL
 Testing: 4/2/1/3 FAIL
 Testing: 4+2+3+1 FAIL
-Testing: 4+2+3-1 FAIL
-Testing: 4+2+3*1 SUCCESS
-Testing: 4+2+3/1 SUCCESS
+Testing: 4+2+3-1 SUCCESS
+Testing: 4+2+3*1 FAIL
+Testing: 4+2+3/1 FAIL
 Testing: 4+2-3+1 FAIL
 Testing: 4+2-3-1 FAIL
 Testing: 4+2-3*1 FAIL
 Testing: 4+2-3/1 FAIL
 Testing: 4+2*3+1 FAIL
-Testing: 4+2*3-1 SUCCESS
+Testing: 4+2*3-1 FAIL
 Testing: 4+2*3*1 FAIL
 Testing: 4+2*3/1 FAIL
 Testing: 4+2/3+1 FAIL
@@ -1525,17 +1525,17 @@ Testing: 4/2/3*1 FAIL
 Testing: 4/2/3/1 FAIL
 Testing: 4+3+1+2 FAIL
 Testing: 4+3+1-2 FAIL
-Testing: 4+3+1*2 SUCCESS
+Testing: 4+3+1*2 FAIL
 Testing: 4+3+1/2 FAIL
-Testing: 4+3-1+2 FAIL
+Testing: 4+3-1+2 SUCCESS
 Testing: 4+3-1-2 FAIL
 Testing: 4+3-1*2 FAIL
 Testing: 4+3-1/2 FAIL
-Testing: 4+3*1+2 SUCCESS
+Testing: 4+3*1+2 FAIL
 Testing: 4+3*1-2 FAIL
 Testing: 4+3*1*2 FAIL
 Testing: 4+3*1/2 FAIL
-Testing: 4+3/1+2 SUCCESS
+Testing: 4+3/1+2 FAIL
 Testing: 4+3/1-2 FAIL
 Testing: 4+3/1*2 FAIL
 Testing: 4+3/1/2 FAIL
@@ -1560,7 +1560,7 @@ Testing: 4*3+1-2 FAIL
 Testing: 4*3+1*2 FAIL
 Testing: 4*3+1/2 FAIL
 Testing: 4*3-1+2 FAIL
-Testing: 4*3-1-2 SUCCESS
+Testing: 4*3-1-2 FAIL
 Testing: 4*3-1*2 FAIL
 Testing: 4*3-1/2 FAIL
 Testing: 4*3*1+2 FAIL
@@ -1588,15 +1588,15 @@ Testing: 4/3/1-2 FAIL
 Testing: 4/3/1*2 FAIL
 Testing: 4/3/1/2 FAIL
 Testing: 4+3+2+1 FAIL
-Testing: 4+3+2-1 FAIL
-Testing: 4+3+2*1 SUCCESS
-Testing: 4+3+2/1 SUCCESS
+Testing: 4+3+2-1 SUCCESS
+Testing: 4+3+2*1 FAIL
+Testing: 4+3+2/1 FAIL
 Testing: 4+3-2+1 FAIL
 Testing: 4+3-2-1 FAIL
 Testing: 4+3-2*1 FAIL
 Testing: 4+3-2/1 FAIL
 Testing: 4+3*2+1 FAIL
-Testing: 4+3*2-1 SUCCESS
+Testing: 4+3*2-1 FAIL
 Testing: 4+3*2*1 FAIL
 Testing: 4+3*2/1 FAIL
 Testing: 4+3/2+1 FAIL
@@ -1624,7 +1624,7 @@ Testing: 4*3+2-1 FAIL
 Testing: 4*3+2*1 FAIL
 Testing: 4*3+2/1 FAIL
 Testing: 4*3-2+1 FAIL
-Testing: 4*3-2-1 SUCCESS
+Testing: 4*3-2-1 FAIL
 Testing: 4*3-2*1 FAIL
 Testing: 4*3-2/1 FAIL
 Testing: 4*3*2+1 FAIL
@@ -1653,69 +1653,27 @@ Testing: 4/3/2*1 FAIL
 Testing: 4/3/2/1 FAIL
 
 ANSWERS:
-1*2+3+4
-1*2+4+3
-1*3+2+4
-1*3+4+2
-1*4+2+3
-1*4+3+2
-2+1*3+4
-2*1+3+4
-2/1+3+4
-2+1*4+3
-2*1+4+3
-2/1+4+3
-2+3+1*4
-2+3*1+4
-2+3/1+4
-2*3-1+4
-2+3+4*1
-2+3+4/1
-2*3+4-1
-2+4+1*3
-2+4*1+3
-2+4/1+3
-2+4+3*1
-2+4+3/1
-3+1*2+4
-3*1+2+4
-3/1+2+4
-3+1*4+2
-3*1+4+2
-3/1+4+2
-3+2+1*4
-3+2*1+4
-3+2/1+4
-3*2-1+4
-3+2+4*1
-3+2+4/1
-3*2+4-1
-3+4+1*2
-3+4*1+2
-3+4/1+2
-3*4-1-2
-3+4+2*1
-3+4+2/1
-3*4-2-1
-4+1*2+3
-4-1+2*3
-4*1+2+3
-4/1+2+3
-4+1*3+2
-4-1+3*2
-4*1+3+2
-4/1+3+2
-4+2+1*3
-4+2*1+3
-4+2/1+3
-4+2+3*1
-4+2+3/1
-4+2*3-1
-4+3+1*2
-4+3*1+2
-4+3/1+2
-4*3-1-2
-4+3+2*1
-4+3+2/1
-4+3*2-1
-4*3-2-1
+1/3+2*4
+1/3+4*2
+2-1+3+4
+2-1+4+3
+2+3-1+4
+2+3+4-1
+2+4-1+3
+2*4+1/3
+2*4-1/3
+2+4+3-1
+3-1+2+4
+3-1+4+2
+3+2-1+4
+3+2+4-1
+3+4-1+2
+3+4+2-1
+4-1+2+3
+4-1+3+2
+4+2-1+3
+4*2+1/3
+4*2-1/3
+4+2+3-1
+4+3-1+2
+4+3+2-1
