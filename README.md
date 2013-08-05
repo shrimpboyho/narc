@@ -7,6 +7,7 @@ How to build:
 
 ```
 $ git clone https://github.com/shrimpboyho/narc.git
+$ cd narc
 $ make
 ```
 
