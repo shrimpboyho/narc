@@ -6,6 +6,7 @@
 #include <vector>
 #include <math.h>
 #include <algorithm>
+#include "constants.h"
 
 /* Structure which holds the four numbers in an expression */
 

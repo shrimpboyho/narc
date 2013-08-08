@@ -1,0 +1,5 @@
+#define SUCCESS_MESSAGE " SUCCESS\n"
+#define FAIL_MESSAGE " FAIL\n"
+#define TESTING_MESSAGE "Testing: "
+#define OPERATIONS "+", "-", "*", "/"
+#define DEFAULTS "", "", "", ""
