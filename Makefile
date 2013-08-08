@@ -1,2 +1,2 @@
 all:
-	g++ main.cpp algo.cpp -o thing
+	g++ main.cpp algo.cpp -o build/thing
